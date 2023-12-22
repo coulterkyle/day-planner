@@ -1,6 +1,6 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+const currentDay = dayjs().format('dddd, MMMM D YYYY, h:mm a');
+$('#currentDay').text(currentDay);
+
 $(function () {
     // TODO: Add a listener for click events on the save button. This code should
     // use the id in the containing time-block as a key to save the user input in
@@ -20,5 +20,19 @@ $(function () {
     // attribute of each time-block be used to do this?
     //
     // TODO: Add code to display the current date in the header of the page.
-  });
-  
+    
+
+    function toDos() {
+        $('.saveBtn').on('click', function() {
+          const key = $(this).parent().attr('id');
+          const value = $(this).siblings('.description').val();
+          localStorage.setItem(key, value);
+        });
+    $('.time-block').each(function() {
+        const key = $(this).attr('id');
+        const value = localStorage.getItem(key);
+        $(this).children('.description').val(value);
+      });
+}
+toDos()
+});
