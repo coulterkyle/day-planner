@@ -7,21 +7,18 @@ Created a daily planner to exercise my knowledge of concepts learned so far in b
 
 ## Installation
 
-Visit the link
+Visit the link:
+https://coulterkyle.github.io/day-planner/
 
 ## Usage
 
 Upon visiting the site you will be greeted with a day planner for the standard 9-5 workday. 
 
-    ```md
-    ![Opening-picture](Assets/Screenshots/Screenshot 2023-12-21 at 10.16.04 PM.png)
-    ```
+![opening-pic](/Assets/Screenshots/Screenshot%202023-12-21%20at%2010.16.04 PM.png)
 
 You will noitce different colors of the day depending on the time of the day. Greyed out portions represent the past, red portions represent the present and green portions represent the future. Fill out the necessary time slots and keep track of your day!
 
-    ```md
-    ![Example-of-usage](Assets/Screenshots/Screenshot 2023-12-21 at 10.19.21 PM.png)
-    ```
+![Example-of-usage](/Assets/Screenshots/Screenshot%202023-12-21%20at%2010.19.21 PM.png)
 
 ## License
 
